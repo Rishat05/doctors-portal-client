@@ -4,16 +4,16 @@ import bg from '../../assets/images/bg.png';
 import { DayPicker } from 'react-day-picker';
 import 'react-day-picker/dist/style.css';
 
-const AppointmentBanner = ({date, setDate}) => {
-    
+const AppointmentBanner = ({ date, setDate }) => {
+
     return (
         <div style={{
             background: `url(${bg})`,
             backgroundSize: 'cover'
-        }} className="hero min-h-screen">
+        }} className="hero min-h-screen w-full">
             <div className="hero-content flex-col lg:flex-row-reverse">
-                <img src={chair} className="max-w-sm rounded-lg shadow-2xl" alt='Dentist Chair' />
-                <div>
+                <img src={chair} className="w-full lg:max-w-sm rounded-lg shadow-2xl" alt='Dentist Chair' />
+                <div className='w-full'>
                     <DayPicker
                         mode="single"
                         selected={date}

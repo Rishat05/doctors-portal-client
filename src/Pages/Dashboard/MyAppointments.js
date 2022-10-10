@@ -12,7 +12,7 @@ const MyAppointments = () => {
 
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/booking?patient=${user.email}`, {
+            fetch(`https://doctors-portal-743m.onrender.com/booking?patient=${user.email}`, {
                 method: 'GET',
                 headers: {
                     'authorization': `Bearer ${localStorage.getItem('accessToken')}`
@@ -36,7 +36,7 @@ const MyAppointments = () => {
 
     return (
         <div>
-            <h2>My Appointments: {appointments.length}</h2>
+            <h2 className='my-3 px-3'>My Appointments: {appointments.length}</h2>
             <div className="overflow-x-auto">
                 <table className="table w-full">
                     <thead>
