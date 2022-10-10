@@ -9,7 +9,7 @@ const ShowReview = () => {
     const [totalPage, setTotalPage] = useState(0);
 
     useEffect(() => {
-        fetch(` https://doctors-portal-743m.onrender.com/reviews?limit=${limit}&pageNumber=${pageNumber}`)
+        fetch(`https://doctors-portal-743m.onrender.com/reviews?limit=${limit}&pageNumber=${pageNumber}`)
             .then(res => res.json())
             .then(data => {
                 setreviews(data.services);
