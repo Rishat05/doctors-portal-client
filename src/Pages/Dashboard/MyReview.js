@@ -20,7 +20,7 @@ const MyReview = () => {
             const addedBy = user.email;
             const review = { ...data, addedBy };
             // console.log(review);
-            const url = ` http://localhost:5000/review`;
+            const url = ` https://doctors-portal-743m.onrender.com/review`;
             fetch(url, {
                 method: 'POST',
                 headers: {
